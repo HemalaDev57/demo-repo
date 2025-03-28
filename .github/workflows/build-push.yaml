@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write  # Required to commit version updates
   packages: write
 
 jobs:
@@ -18,16 +18,47 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
+
       - name: Set up Go
         uses: actions/setup-go@v5
         with:
           go-version: '1.21'
-          cache: true  # Caches dependencies
+          cache: true  # Speeds up builds
+
+      - name: Read & Increment Version
+        id: versioning
+        run: |
+          VERSION_FILE="VERSION"
+
+          # Initialize version file if missing
+          if [ ! -f "$VERSION_FILE" ]; then
+            echo "1.0.0" > $VERSION_FILE
+          fi
+
+          # Read current version
+          CURRENT_VERSION=$(cat $VERSION_FILE)
+          IFS='.' read -r MAJOR MINOR PATCH <<< "$CURRENT_VERSION"
+
+          # Increment patch version
+          PATCH=$((PATCH + 1))
+          NEW_VERSION="$MAJOR.$MINOR.$PATCH"
+
+          echo "$NEW_VERSION" > $VERSION_FILE
+          echo "version=$NEW_VERSION" >> $GITHUB_OUTPUT
+
+      - name: Commit Updated Version
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          git add VERSION
+          git commit -m "Bump version to ${{ steps.versioning.outputs.version }}"
+          git push origin master
 
       - name: Build Go Application
         run: |
           go mod tidy
-          go install .  
+          go install .
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
@@ -35,35 +66,31 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Set Docker Image Tag
-        id: set-tag
-        run: echo "image_tag=$(date +%Y%m%d%H%M%S)" >> $GITHUB_OUTPUT
-
-      - name: Build and Push Docker Image 
+      - name: Build and Push Docker Image
         env:
-          DOCKER_BUILDKIT: 1  # Enables BuildKit for speed
+          DOCKER_BUILDKIT: 1
         run: |
           IMAGE_NAME="${{ secrets.DOCKER_USERNAME }}/demo-service"
-          IMAGE_TAG="${{ steps.set-tag.outputs.image_tag }}"
+          IMAGE_VERSION="${{ steps.versioning.outputs.version }}"
 
-          docker build -t $IMAGE_NAME:$IMAGE_TAG --progress=plain .
-          docker tag $IMAGE_NAME:$IMAGE_TAG $IMAGE_NAME:latest
-          docker push $IMAGE_NAME:$IMAGE_TAG
+          docker build -t $IMAGE_NAME:$IMAGE_VERSION --progress=plain .
+          docker tag $IMAGE_NAME:$IMAGE_VERSION $IMAGE_NAME:latest
+          docker push $IMAGE_NAME:$IMAGE_VERSION
           docker push $IMAGE_NAME:latest
 
       - name: Get Image Digest
         id: image-digest
         run: |
           IMAGE_NAME="${{ secrets.DOCKER_USERNAME }}/demo-service"
-          DIGEST=$(docker manifest inspect $IMAGE_NAME:${{ steps.set-tag.outputs.image_tag }} | jq -r '.manifests[0].digest')
+          DIGEST=$(docker manifest inspect $IMAGE_NAME:${{ steps.versioning.outputs.version }} | jq -r '.manifests[0].digest')
           echo "digest=$DIGEST" >> $GITHUB_OUTPUT
 
       - name: Register Artifact with CloudBees
         uses: cloudbees-gha-cbp/register-build-artifact@main
         with:
           name: "demo-service"
-          version: "${{ steps.set-tag.outputs.image_tag }}"
-          url: "docker.io/${{ secrets.DOCKER_USERNAME }}/demo-service:${{ steps.set-tag.outputs.image_tag }}"
+          version: "${{ steps.versioning.outputs.version }}"
+          url: "docker.io/${{ secrets.DOCKER_USERNAME }}/demo-service:${{ steps.versioning.outputs.version }}"
           digest: "${{ steps.image-digest.outputs.digest }}"
           type: "docker"
           cloudbees-url: "https://api.saas-preprod.beescloud.com"
