@@ -48,4 +48,6 @@ jobs:
           docker push ${{ secrets.DOCKER_USERNAME }}/go-service:latest
 
       - name: Display Pushed Image
-        run: echo "Pushed Docker image: ${{ secrets.DOCKER_USERNAME }}/go-service:${{ env.IMAGE_TAG }}"
+        run: |
+          echo "Pushed Docker image: ${{ secrets.DOCKER_USERNAME }}/go-service:${{ env.IMAGE_TAG }}"
+        
