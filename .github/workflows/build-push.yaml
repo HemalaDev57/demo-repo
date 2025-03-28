@@ -34,20 +34,41 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Set Docker Image Tag
-        id: vars
-        run: echo "IMAGE_TAG=$(date +%Y%m%d%H%M%S)" >> $GITHUB_ENV
+        id: set-tag
+        run: echo "image_tag=$(date +%Y%m%d%H%M%S)" >> $GITHUB_OUTPUT
 
       - name: Build and Tag Docker Image
         run: |
-          docker build -t ${{ secrets.DOCKER_USERNAME }}/go-service:${{ env.IMAGE_TAG }} .
-          docker tag ${{ secrets.DOCKER_USERNAME }}/go-service:${{ env.IMAGE_TAG }} ${{ secrets.DOCKER_USERNAME }}/go-service:latest
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/demo-service:${{ steps.set-tag.outputs.image_tag }} .
+          docker tag ${{ secrets.DOCKER_USERNAME }}/demo-service:${{ steps.set-tag.outputs.image_tag }} ${{ secrets.DOCKER_USERNAME }}/demo-service:latest
 
       - name: Push Docker Image
         run: |
-          docker push ${{ secrets.DOCKER_USERNAME }}/go-service:${{ env.IMAGE_TAG }}
-          docker push ${{ secrets.DOCKER_USERNAME }}/go-service:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/demo-service:${{ steps.set-tag.outputs.image_tag }}
+          docker push ${{ secrets.DOCKER_USERNAME }}/demo-service:latest
 
-      - name: Display Pushed Image
+      - name: Get Image Digest
+        id: image-digest
         run: |
-          echo "Pushed Docker image: ${{ secrets.DOCKER_USERNAME }}/go-service:${{ env.IMAGE_TAG }}"
-        
+          DIGEST=$(docker inspect --format='{{index .RepoDigests 0}}' ${{ secrets.DOCKER_USERNAME }}/demo-service:${{ steps.set-tag.outputs.image_tag }} | awk -F@ '{print $2}')
+          echo "digest=$DIGEST" >> $GITHUB_OUTPUT
+
+      - name: Create Artifact Details Output
+        id: artifact-details
+        run: |
+          echo "name=demo-service" >> $GITHUB_OUTPUT
+          echo "version=${{ steps.set-tag.outputs.image_tag }}" >> $GITHUB_OUTPUT
+          echo "url=docker.io/${{ secrets.DOCKER_USERNAME }}/demo-service:${{ steps.set-tag.outputs.image_tag }}" >> $GITHUB_OUTPUT
+          echo "digest=${{ steps.image-digest.outputs.digest }}" >> $GITHUB_OUTPUT
+
+      - name: Register Artifact with CloudBees
+        uses: cloudbees-gha-cbp/register-build-artifact@main
+        id: go-action
+        with:
+          name: "${{ steps.artifact-details.outputs.name }}"
+          version: "${{ steps.artifact-details.outputs.version }}"
+          url: "${{ steps.artifact-details.outputs.url }}"
+          digest: "${{ steps.artifact-details.outputs.digest }}"
+          type: "docker"
+          cloudbees-url: "https://api.saas-qa.beescloud.com"
+          cloudbees-pat: ${{ secrets.CBP_QA_PAT }}
