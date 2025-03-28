@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write  # Required to commit version updates
+  contents: write 
   packages: write
 
 jobs:
