@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	"log"
 	"net/http"
+
+	"github.com/gorilla/mux"
 )
 
 func handler(w http.ResponseWriter, r *http.Request) {
@@ -11,8 +12,10 @@ func handler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	http.HandleFunc("/", handler)
+	r := mux.NewRouter()
+	r.HandleFunc("/", handler)
+
 	port := "8080"
-	log.Printf("Server is running on port %s...", port)
-	log.Fatal(http.ListenAndServe(":"+port, nil))
+	fmt.Printf("Server is running on port %s...\n", port)
+	http.ListenAndServe(":"+port, r)
 }
