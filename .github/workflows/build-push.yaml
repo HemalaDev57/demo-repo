@@ -85,7 +85,7 @@ jobs:
           echo "Image Digest: $DIGEST"
           echo "digest=$DIGEST" >> $GITHUB_OUTPUT
 
-      - name: Register Artifact with CloudBees
+      - name: Register Build Artifact
         uses: cloudbees-gha-cbp/register-build-artifact@main
         with:
           name: "demo-service"
