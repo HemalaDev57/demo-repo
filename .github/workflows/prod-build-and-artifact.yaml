@@ -43,7 +43,7 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
 
-          git add VERSION
+          git add PROD_VERSION
           git commit -m "Bump version to ${{ steps.versioning.outputs.version }}"
           git push origin master
 
