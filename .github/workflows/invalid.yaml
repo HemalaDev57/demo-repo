@@ -1,0 +1,39 @@
+name: Invalid case - GHA Build Artifact Publish Workflow
+
+on:
+  workflow_dispatch:
+  
+jobs:
+  invalid-url:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Run My Custom Go Action
+        uses: cloudbees-gha-cbp/register-build-artifact@main
+        id: go-action
+        with:
+          name: "test-artifact-002"
+          version: 1.0.0
+          url: "docker.io/calculi-corp/gha-action/test-artifact-002:latest"
+          digest: "sha256:a2a123ee08af5e43a7fea6c4cf9c25ccf269ee113168c19722f87876677c5cb1"
+          type: "docker"
+          cloudbees-url: "https://api.test.beescloud.com"
+          cloudbees-pat: ${{ secrets.CBP_PAT }}
+
+  invalid-pat:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Run My Custom Go Action
+        uses: cloudbees-gha-cbp/register-build-artifact@main
+        id: go-action
+        with:
+          name: "test-artifact-002"
+          version: 1.0.0
+          url: "docker.io/calculi-corp/gha-action/test-artifact-002:latest"
+          digest: "sha256:a2a123ee08af5e43a7fea6c4cf9c25ccf269ee113168c19722f87876677c5cb1"
+          type: "docker"
+          cloudbees-url: "https://api.cloudbees.io"
+          cloudbees-pat: ${{ secrets.CBP_QA_PAT }}
