@@ -83,7 +83,7 @@ jobs:
           echo "digest=$DIGEST" >> $GITHUB_OUTPUT
 
       - name: Register Build Artifact
-        uses: cloudbees-gha-cbp/register-build-artifact@main
+        uses: cloudbees-io-gha/register-build-artifact@v2
         with:
           name: "demo-service"
           version: "${{ steps.versioning.outputs.version }}"
