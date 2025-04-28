@@ -43,61 +43,54 @@ jobs:
         with:
           test-type: testng
           results-path: test_data/testng/report.xml
-          cloudbees-url: "https://api.cloudbees.io"
           cloudbees-pat: ${{ secrets.CBP_PROD_PAT }}
       - name: GO-Test
         uses: cloudbees-io-gha/publish-test-results@v1
         with:
           test-type: go
           results-path: test_data/go/report2.xml
-          cloudbees-url: "https://api.cloudbees.io"
           cloudbees-pat: ${{ secrets.CBP_PROD_PAT }}
       - name: ProdPerfect-Test
         uses: cloudbees-io-gha/publish-test-results@v1
         with:
           test-type: prodperfect
           results-path: test_data/prod_perfect/*.json
+          cloudbees-pat: ${{ secrets.CBP_PROD_PAT }}
       - name: MStest-Test
         uses: cloudbees-io-gha/publish-test-results@v1
         with:
           test-type: mstest
           results-path: test_data/mstest/*.trx
-          cloudbees-url: "https://api.cloudbees.io"
           cloudbees-pat: ${{ secrets.CBP_PROD_PAT }}
       - name: Tosca-Test
         uses: cloudbees-io-gha/publish-test-results@v1
         with:
           test-type: tosca
           results-path: test_data/tosca/cloud.json
-          cloudbees-url: "https://api.cloudbees.io"
           cloudbees-pat: ${{ secrets.CBP_PROD_PAT }}
       - name: Selenium-Test
         uses: cloudbees-io-gha/publish-test-results@v1
         with:
           test-type: selenium
           results-path: test_data/selenium/reports/selenium_ide_runner_jest_withfailure.json
-          cloudbees-url: "https://api.cloudbees.io"
           cloudbees-pat: ${{ secrets.CBP_PROD_PAT }}
       - name: Jmeter-Test
         uses: cloudbees-io-gha/publish-test-results@v1
         with:
           test-type: jmeter
           results-path: test_data/jmeter/jxmltestreport.jtl
-          cloudbees-url: "https://api.cloudbees.io"
           cloudbees-pat: ${{ secrets.CBP_PROD_PAT }}
       - name: Jest-Test
         uses: cloudbees-io-gha/publish-test-results@v1
         with:
           test-type: jest
           results-path: test_data/jest/nextgen-ui/jest-results.json
-          cloudbees-url: "https://api.cloudbees.io"
           cloudbees-pat: ${{ secrets.CBP_PROD_PAT }}
       - name: PlayWright-Test
         uses: cloudbees-io-gha/publish-test-results@v1
         with:
           test-type: playwright
           results-path: test_data/playwright/results_failed.json
-          cloudbees-url: "https://api.cloudbees.io"
           cloudbees-pat: ${{ secrets.CBP_PROD_PAT }}
 
   deploy:
