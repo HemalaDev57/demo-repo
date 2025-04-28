@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+    <!-- Sample JUnit Test Results -->
+    <sample t="123" it="0" lt="123" ts="1624077628123" s="true" lb="CalculatorTest.testAddition" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="1024" ng="1" na="1" hn="localhost">
+        <responseHeader class="java.lang.String">
+            <![CDATA[HTTP/1.1 200 OK
+Date: Mon, 07 Jun 2021 12:00:28 GMT
+Server: Apache/2.4.1 (Unix)
+Content-Length: 1024
+Content-Type: text/html; charset=UTF-8]]>
+        </responseHeader>
+        <responseData class="java.lang.String">
+            <![CDATA[JUnit Test Result: Passed]]>
+        </responseData>
+        <assertionResult>
+            <name>JUnit Assertion</name>
+            <failure>false</failure>
+            <error>false</error>
+            <failureMessage></failureMessage>
+        </assertionResult>
+    </sample>
+    
+    <sample t="234" it="0" lt="234" ts="1624077628234" s="false" lb="CalculatorTest.testSubtraction" rc="500" rm="Internal Server Error" tn="Thread Group 1-1" dt="text" by="2048" ng="1" na="1" hn="localhost">
+        <responseHeader class="java.lang.String">
+            <![CDATA[HTTP/1.1 500 Internal Server Error
+Date: Mon, 07 Jun 2021 12:00:29 GMT
+Server: Apache/2.4.1 (Unix)
+Content-Length: 2048
+Content-Type: text/html; charset=UTF-8]]>
+        </responseHeader>
+        <responseData class="java.lang.String">
+            <![CDATA[JUnit Test Result: Failed. Expected value was not returned.]]>
+        </responseData>
+        <assertionResult>
+            <name>JUnit Assertion</name>
+            <failure>true</failure>
+            <error>false</error>
+            <failureMessage>Expected value: 5, Actual value: 3</failureMessage>
+        </assertionResult>
+    </sample>
+    
+    <sample t="345" it="0" lt="345" ts="1624077628345" s="true" lb="CalculatorTest.testMultiplication" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="512" ng="1" na="1" hn="localhost">
+        <responseHeader class="java.lang.String">
+            <![CDATA[HTTP/1.1 200 OK
+Date: Mon, 07 Jun 2021 12:00:30 GMT
+Server: Apache/2.4.1 (Unix)
+Content-Length: 512
+Content-Type: text/html; charset=UTF-8]]>
+        </responseHeader>
+        <responseData class="java.lang.String">
+            <![CDATA[JUnit Test Result: Passed]]>
+        </responseData>
+        <assertionResult>
+            <name>JUnit Assertion</name>
+            <failure>false</failure>
+            <error>false</error>
+            <failureMessage></failureMessage>
+        </assertionResult>
+    </sample>
+</testResults>

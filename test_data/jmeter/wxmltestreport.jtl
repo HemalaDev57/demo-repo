@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="1206" it="0" lt="48" ct="20" ts="1718782795438" s="true" lb="Testreq" rc="200" rm="OK" tn="Test1 1-1" dt="text" by="149239" sby="246" ng="1" na="1">
+  <httpSample t="48" it="0" lt="48" ct="20" ts="1718782795438" s="true" lb="Testreq-0" rc="301" rm="Moved Permanently" tn="Test1 1-1" dt="text" by="667" sby="123" ng="1" na="1">
+    <java.net.URL>http://tejaksha-k.medium.com/</java.net.URL>
+  </httpSample>
+  <httpSample t="1158" it="0" lt="1068" ct="276" ts="1718782795486" s="true" lb="Testreq-1" rc="200" rm="OK" tn="Test1 1-1" dt="text" by="148572" sby="123" ng="1" na="1">
+    <java.net.URL>https://tejaksha-k.medium.com/</java.net.URL>
+  </httpSample>
+  <java.net.URL>https://tejaksha-k.medium.com/</java.net.URL>
+</httpSample>
+<httpSample t="3875" it="0" lt="1052" ct="1020" ts="1718782797442" s="true" lb="Testreq" rc="200" rm="OK" tn="Test1 1-2" dt="text" by="209771" sby="246" ng="2" na="2">
+  <httpSample t="1052" it="0" lt="1052" ct="1020" ts="1718782797442" s="true" lb="Testreq-0" rc="301" rm="Moved Permanently" tn="Test1 1-2" dt="text" by="667" sby="123" ng="2" na="2">
+    <java.net.URL>http://tejaksha-k.medium.com/</java.net.URL>
+  </httpSample>
+  <httpSample t="2823" it="0" lt="2747" ct="1825" ts="1718782798494" s="true" lb="Testreq-1" rc="200" rm="OK" tn="Test1 1-2" dt="text" by="209104" sby="123" ng="2" na="2">
+    <java.net.URL>https://tejaksha-k.medium.com/</java.net.URL>
+  </httpSample>
+  <java.net.URL>https://tejaksha-k.medium.com/</java.net.URL>
+</httpSample>
+<httpSample t="2061" it="0" lt="281" ct="16" ts="1718782799443" s="true" lb="Testreq" rc="200" rm="OK" tn="Test1 1-3" dt="text" by="209882" sby="246" ng="2" na="2">
+  <httpSample t="281" it="0" lt="281" ct="16" ts="1718782799443" s="true" lb="Testreq-0" rc="301" rm="Moved Permanently" tn="Test1 1-3" dt="text" by="667" sby="123" ng="2" na="2">
+    <java.net.URL>http://tejaksha-k.medium.com/</java.net.URL>
+  </httpSample>
+  <httpSample t="1779" it="0" lt="1744" ct="506" ts="1718782799725" s="true" lb="Testreq-1" rc="200" rm="OK" tn="Test1 1-3" dt="text" by="209215" sby="123" ng="2" na="2">
+    <java.net.URL>https://tejaksha-k.medium.com/</java.net.URL>
+  </httpSample>
+  <java.net.URL>https://tejaksha-k.medium.com/</java.net.URL>
+</httpSample>
+<httpSample t="1847" it="0" lt="103" ct="34" ts="1718782801444" s="true" lb="Testreq" rc="200" rm="OK" tn="Test1 1-4" dt="text" by="149113" sby="246" ng="1" na="1">
+  <httpSample t="103" it="0" lt="103" ct="34" ts="1718782801444" s="true" lb="Testreq-0" rc="301" rm="Moved Permanently" tn="Test1 1-4" dt="text" by="667" sby="123" ng="1" na="1">
+    <java.net.URL>http://tejaksha-k.medium.com/</java.net.URL>
+  </httpSample>
+  <httpSample t="1743" it="0" lt="1729" ct="46" ts="1718782801548" s="true" lb="Testreq-1" rc="200" rm="OK" tn="Test1 1-4" dt="text" by="148446" sby="123" ng="1" na="1">
+    <java.net.URL>https://tejaksha-k.medium.com/</java.net.URL>
+  </httpSample>
+  <java.net.URL>https://tejaksha-k.medium.com/</java.net.URL>
+</httpSample>
+<httpSample t="1613" it="0" lt="51" ct="18" ts="1718782803441" s="true" lb="Testreq" rc="200" rm="OK" tn="Test1 1-5" dt="text" by="209882" sby="246" ng="1" na="1">
+  <httpSample t="51" it="0" lt="51" ct="18" ts="1718782803441" s="true" lb="Testreq-0" rc="301" rm="Moved Permanently" tn="Test1 1-5" dt="text" by="667" sby="123" ng="1" na="1">
+    <java.net.URL>http://tejaksha-k.medium.com/</java.net.URL>
+  </httpSample>
+  <httpSample t="1561" it="0" lt="1440" ct="75" ts="1718782803493" s="true" lb="Testreq-1" rc="200" rm="OK" tn="Test1 1-5" dt="text" by="209215" sby="123" ng="1" na="1">
+    <java.net.URL>https://tejaksha-k.medium.com/</java.net.URL>
+  </httpSample>
+  <java.net.URL>https://tejaksha-k.medium.com/</java.net.URL>
+</httpSample>
+
+</testResults>

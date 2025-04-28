@@ -1,0 +1,289 @@
+{
+    "tests": [
+      {
+        "status": "passed",
+        "test_name": "Test 28",
+        "execution_id": "5f30ea7a-ad89-4b4f-8cd3-f90305daa6d7",
+        "steps": [
+          {
+            "title": "Before Hooks",
+            "error": false
+          },
+          {
+            "title": "page.goto(https://saas-preprod.beescloud.com/)",
+            "error": false,
+            "location": {
+              "file": "/root/tests/test_69e64fa9_3a2f_4ebf_949c_a124744c4aeb.spec.js",
+              "line": 9,
+              "column": 16
+            }
+          },
+          {
+            "title": "expect.toBeVisible",
+            "error": false,
+            "location": {
+              "file": "/root/tests/test_69e64fa9_3a2f_4ebf_949c_a124744c4aeb.spec.js",
+              "line": 10,
+              "column": 78
+            }
+          },
+          {
+            "title": "browserContext.addCookies",
+            "error": false,
+            "location": {
+              "file": "/root/test-tracking.js",
+              "line": 5,
+              "column": 26,
+              "function": "_initializeTracking"
+            }
+          },
+          {
+            "title": "page.addScriptTag",
+            "error": false,
+            "location": {
+              "file": "/root/test-tracking.js",
+              "line": 21,
+              "column": 20,
+              "function": "_initializeTracking"
+            }
+          },
+          {
+            "title": "locator.click(input#username)",
+            "error": false,
+            "location": {
+              "file": "/root/tests/test_69e64fa9_3a2f_4ebf_949c_a124744c4aeb.spec.js",
+              "line": 12,
+              "column": 42
+            }
+          },
+          {
+            "title": "locator.type(input#username, ngui-prodperfect-admin@cloudbees.com)",
+            "error": false,
+            "location": {
+              "file": "/root/tests/test_69e64fa9_3a2f_4ebf_949c_a124744c4aeb.spec.js",
+              "line": 13,
+              "column": 42
+            }
+          },
+          {
+            "title": "locator.click(input#password)",
+            "error": false,
+            "location": {
+              "file": "/root/tests/test_69e64fa9_3a2f_4ebf_949c_a124744c4aeb.spec.js",
+              "line": 14,
+              "column": 42
+            }
+          },
+          {
+            "title": "locator.click(input#password)",
+            "error": false,
+            "location": {
+              "file": "/root/tests/test_69e64fa9_3a2f_4ebf_949c_a124744c4aeb.spec.js",
+              "line": 15,
+              "column": 42
+            }
+          },
+          {
+            "title": "locator.type(input#password, zxr-pnr.zfq1trg@AVF)",
+            "error": false,
+            "location": {
+              "file": "/root/tests/test_69e64fa9_3a2f_4ebf_949c_a124744c4aeb.spec.js",
+              "line": 16,
+              "column": 42
+            }
+          },
+          {
+            "title": "locator.click(button[name=\"login\"])",
+            "error": false,
+            "location": {
+              "file": "/root/tests/test_69e64fa9_3a2f_4ebf_949c_a124744c4aeb.spec.js",
+              "line": 17,
+              "column": 50
+            }
+          },
+          {
+            "title": "After Hooks",
+            "error": false
+          }
+        ],
+        "errors": [],
+        "test_id": "69e64fa9-3a2f-4ebf-949c-a124744c4aeb",
+        "testsuite_id": "0136b9ce-7ae1-4b61-929d-3d7b45dbf7d5",
+        "runtime": 3333,
+        "updated_at": "2024-06-05T12:52:29.346973",
+        "submitted_at": "2024-06-05T12:50:08.298361",
+        "failing_step_id": "62e176e4-1b9e-42dc-9264-1c23fe5fd88a"
+      },
+      {
+        "status": "passed",
+        "test_name": "Login",
+        "execution_id": "5f30ea7a-ad89-4b4f-8cd3-f90305daa6d7",
+        "steps": [
+          {
+            "title": "Before Hooks",
+            "error": false
+          },
+          {
+            "title": "page.goto(/)",
+            "error": false,
+            "location": {
+              "file": "/root/tests/test_ccd09c49_0b92_47dc_b8c3_9766b87ce844.spec.js",
+              "line": 10,
+              "column": 16
+            }
+          },
+          {
+            "title": "expect.toBeVisible",
+            "error": false,
+            "location": {
+              "file": "/root/tests/test_ccd09c49_0b92_47dc_b8c3_9766b87ce844.spec.js",
+              "line": 11,
+              "column": 56
+            }
+          },
+          {
+            "title": "browserContext.addCookies",
+            "error": false,
+            "location": {
+              "file": "/root/test-tracking.js",
+              "line": 5,
+              "column": 26,
+              "function": "_initializeTracking"
+            }
+          },
+          {
+            "title": "page.addScriptTag",
+            "error": false,
+            "location": {
+              "file": "/root/test-tracking.js",
+              "line": 21,
+              "column": 20,
+              "function": "_initializeTracking"
+            }
+          },
+          {
+            "title": "locator.type(input#password, zxr-pnr.zfq1trg@AVF)",
+            "error": false,
+            "location": {
+              "file": "/root/tests/test_ccd09c49_0b92_47dc_b8c3_9766b87ce844.spec.js",
+              "line": 13,
+              "column": 42
+            }
+          },
+          {
+            "title": "locator.click(button[name=\"login\"])",
+            "error": false,
+            "location": {
+              "file": "/root/tests/test_ccd09c49_0b92_47dc_b8c3_9766b87ce844.spec.js",
+              "line": 14,
+              "column": 48
+            }
+          },
+          {
+            "title": "expect.toBeVisible",
+            "error": false,
+            "location": {
+              "file": "/root/tests/test_ccd09c49_0b92_47dc_b8c3_9766b87ce844.spec.js",
+              "line": 15,
+              "column": 99
+            }
+          },
+          {
+            "title": "browserContext.addCookies",
+            "error": false,
+            "location": {
+              "file": "/root/test-tracking.js",
+              "line": 5,
+              "column": 26,
+              "function": "_initializeTracking"
+            }
+          },
+          {
+            "title": "page.addScriptTag",
+            "error": true,
+            "location": {
+              "file": "/root/test-tracking.js",
+              "line": 21,
+              "column": 20,
+              "function": "_initializeTracking"
+            }
+          },
+          {
+            "title": "locator.click(button[data-testid=\"account-menu-cta\"]:has-text(\"ProdPerfect preprod\"))",
+            "error": false,
+            "location": {
+              "file": "/root/tests/test_ccd09c49_0b92_47dc_b8c3_9766b87ce844.spec.js",
+              "line": 17,
+              "column": 98
+            }
+          },
+          {
+            "title": "locator.hover(li[data-testid=\"sign-out\"])",
+            "error": false,
+            "location": {
+              "file": "/root/tests/test_ccd09c49_0b92_47dc_b8c3_9766b87ce844.spec.js",
+              "line": 18,
+              "column": 54
+            }
+          },
+          {
+            "title": "locator.click(li[data-testid=\"sign-out\"])",
+            "error": false,
+            "location": {
+              "file": "/root/tests/test_ccd09c49_0b92_47dc_b8c3_9766b87ce844.spec.js",
+              "line": 19,
+              "column": 54
+            }
+          },
+          {
+            "title": "expect.toBeVisible",
+            "error": false,
+            "location": {
+              "file": "/root/tests/test_ccd09c49_0b92_47dc_b8c3_9766b87ce844.spec.js",
+              "line": 20,
+              "column": 96
+            }
+          },
+          {
+            "title": "browserContext.addCookies",
+            "error": false,
+            "location": {
+              "file": "/root/test-tracking.js",
+              "line": 5,
+              "column": 26,
+              "function": "_initializeTracking"
+            }
+          },
+          {
+            "title": "page.addScriptTag",
+            "error": false,
+            "location": {
+              "file": "/root/test-tracking.js",
+              "line": 21,
+              "column": 20,
+              "function": "_initializeTracking"
+            }
+          },
+          {
+            "title": "After Hooks",
+            "error": false
+          }
+        ],
+        "errors": [],
+        "test_id": "ccd09c49-0b92-47dc-b8c3-9766b87ce844",
+        "testsuite_id": "0136b9ce-7ae1-4b61-929d-3d7b45dbf7d5",
+        "runtime": 12628,
+        "updated_at": "2024-06-05T12:52:41.325573",
+        "submitted_at": "2024-06-05T12:50:08.298361",
+        "failing_step_id": null
+      }
+    ],
+    "source": "cli",
+    "overrides": {},
+    "completed": true,
+    "completed_at": "2024-06-05 12:52:41.325573",
+    "id": "5f30ea7a-ad89-4b4f-8cd3-f90305daa6d7",
+    "build_id": null,
+    "submitted_at": "2024-06-05T12:50:08.298361",
+    "submitted_by": null
+  }

@@ -1,0 +1,212 @@
+{
+    "config": {
+      "configFile": "/Users/rjain/git/aspm-test-automation/playwright.config.ts",
+      "rootDir": "/Users/rjain/git/aspm-test-automation/tests",
+      "forbidOnly": false,
+      "fullyParallel": false,
+      "globalSetup": "/Users/rjain/git/aspm-test-automation/core/global.setup.ts",
+      "globalTeardown": "/Users/rjain/git/aspm-test-automation/core/global.tearDown.ts",
+      "globalTimeout": 0,
+      "grep": {},
+      "grepInvert": null,
+      "maxFailures": 0,
+      "metadata": {
+        "actualWorkers": 1
+      },
+      "preserveOutput": "always",
+      "reporter": [
+        [
+          "html",
+          {
+            "open": "always"
+          }
+        ],
+        [
+          "json",
+          {
+            "outputFile": "./results.json"
+          }
+        ],
+        [
+          "line",
+          null
+        ],
+        [
+          "/Users/rjain/git/aspm-test-automation/node_modules/allure-playwright/dist/index.js",
+          {
+            "open": "never"
+          }
+        ]
+      ],
+      "reportSlowTests": {
+        "max": 5,
+        "threshold": 15000
+      },
+      "quiet": false,
+      "projects": [
+        {
+          "outputDir": "/Users/rjain/git/aspm-test-automation/test-results",
+          "repeatEach": 1,
+          "retries": 0,
+          "metadata": {},
+          "id": "chrome",
+          "name": "chrome",
+          "testDir": "/Users/rjain/git/aspm-test-automation/tests",
+          "testIgnore": [],
+          "testMatch": [
+            "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+          ],
+          "timeout": 120000
+        },
+        {
+          "outputDir": "/Users/rjain/git/aspm-test-automation/test-results",
+          "repeatEach": 1,
+          "retries": 0,
+          "metadata": {},
+          "id": "firefox",
+          "name": "firefox",
+          "testDir": "/Users/rjain/git/aspm-test-automation/tests",
+          "testIgnore": [],
+          "testMatch": [
+            "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+          ],
+          "timeout": 120000
+        },
+        {
+          "outputDir": "/Users/rjain/git/aspm-test-automation/test-results",
+          "repeatEach": 1,
+          "retries": 0,
+          "metadata": {},
+          "id": "safari",
+          "name": "safari",
+          "testDir": "/Users/rjain/git/aspm-test-automation/tests",
+          "testIgnore": [],
+          "testMatch": [
+            "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+          ],
+          "timeout": 120000
+        },
+        {
+          "outputDir": "/Users/rjain/git/aspm-test-automation/test-results",
+          "repeatEach": 1,
+          "retries": 0,
+          "metadata": {},
+          "id": "api",
+          "name": "api",
+          "testDir": "/Users/rjain/git/aspm-test-automation/tests",
+          "testIgnore": [],
+          "testMatch": [
+            "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+          ],
+          "timeout": 120000
+        }
+      ],
+      "shard": null,
+      "updateSnapshots": "missing",
+      "version": "1.44.0",
+      "workers": 6,
+      "webServer": null
+    },
+    "suites": [
+      {
+        "title": "login.test.ts",
+        "file": "login.test.ts",
+        "column": 0,
+        "line": 0,
+        "specs": [],
+        "suites": [
+          {
+            "title": "The login page,",
+            "file": "login.test.ts",
+            "line": 2,
+            "column": 6,
+            "specs": [
+              {
+                "title": "@Smoke Login to saas application successfully",
+                "ok": false,
+                "tags": [
+                  "Smoke"
+                ],
+                "tests": [
+                  {
+                    "timeout": 120000,
+                    "annotations": [],
+                    "expectedStatus": "passed",
+                    "projectId": "chrome",
+                    "projectName": "chrome",
+                    "results": [
+                      {
+                        "workerIndex": 0,
+                        "status": "failed",
+                        "duration": 5310,
+                        "error": {
+                          "message": "Error: Missing credentials!",
+                          "stack": "Error: Missing credentials!\n    at LoginPage.loginToSaas (/Users/rjain/git/aspm-test-automation/pages/loginPage.ts:21:13)\n    at /Users/rjain/git/aspm-test-automation/tests/login.test.ts:5:21",
+                          "location": {
+                            "file": "/Users/rjain/git/aspm-test-automation/pages/loginPage.ts",
+                            "column": 13,
+                            "line": 21
+                          },
+                          "snippet": "\u001b[90m   at \u001b[39m../pages/loginPage.ts:21\n\n\u001b[0m \u001b[90m 19 |\u001b[39m   \u001b[36mpublic\u001b[39m \u001b[36masync\u001b[39m loginToSaas(username \u001b[33m=\u001b[39m \u001b[33mBackground\u001b[39m\u001b[33m.\u001b[39m\u001b[33mUSERNAME\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[33mBackground\u001b[39m\u001b[33m.\u001b[39m\u001b[33mPASSWORD\u001b[39m) {\n \u001b[90m 20 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39musername \u001b[33m||\u001b[39m \u001b[33m!\u001b[39mpassword) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Missing credentials!'\u001b[39m)\n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m     }\n \u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mverifyIsDisplayed(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msignInBtn\u001b[33m,\u001b[39m \u001b[36mtrue\u001b[39m)\n \u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mwaitTillElementIsNotPresent(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordTxtbx)\u001b[0m"
+                        },
+                        "errors": [
+                          {
+                            "location": {
+                              "file": "/Users/rjain/git/aspm-test-automation/pages/loginPage.ts",
+                              "column": 13,
+                              "line": 21
+                            },
+                            "message": "Error: Missing credentials!\n\n\u001b[90m   at \u001b[39m../pages/loginPage.ts:21\n\n\u001b[0m \u001b[90m 19 |\u001b[39m   \u001b[36mpublic\u001b[39m \u001b[36masync\u001b[39m loginToSaas(username \u001b[33m=\u001b[39m \u001b[33mBackground\u001b[39m\u001b[33m.\u001b[39m\u001b[33mUSERNAME\u001b[39m\u001b[33m,\u001b[39m password \u001b[33m=\u001b[39m \u001b[33mBackground\u001b[39m\u001b[33m.\u001b[39m\u001b[33mPASSWORD\u001b[39m) {\n \u001b[90m 20 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39musername \u001b[33m||\u001b[39m \u001b[33m!\u001b[39mpassword) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 21 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m'Missing credentials!'\u001b[39m)\n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 22 |\u001b[39m     }\n \u001b[90m 23 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mverifyIsDisplayed(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39msignInBtn\u001b[33m,\u001b[39m \u001b[36mtrue\u001b[39m)\n \u001b[90m 24 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mwaitTillElementIsNotPresent(\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpasswordTxtbx)\u001b[0m\n\n\u001b[2m    at LoginPage.loginToSaas (/Users/rjain/git/aspm-test-automation/pages/loginPage.ts:21:13)\u001b[22m\n\u001b[2m    at /Users/rjain/git/aspm-test-automation/tests/login.test.ts:5:21\u001b[22m"
+                          }
+                        ],
+                        "stdout": [
+                          {
+                            "text": "ACTION: Navigated to URL: https://saas-preprod.beescloud.com/\n"
+                          }
+                        ],
+                        "stderr": [],
+                        "retry": 0,
+                        "steps": [
+                          {
+                            "title": "ACTION: Navigated to URL: https://saas-preprod.beescloud.com/",
+                            "duration": 4
+                          }
+                        ],
+                        "startTime": "2024-11-07T09:44:08.540Z",
+                        "attachments": [
+                          {
+                            "name": "screenshot",
+                            "contentType": "image/png",
+                            "path": "/Users/rjain/git/aspm-test-automation/test-results/login-The-login-page-Smoke-e3131-as-application-successfully-chrome/test-failed-1.png"
+                          }
+                        ],
+                        "errorLocation": {
+                          "file": "/Users/rjain/git/aspm-test-automation/pages/loginPage.ts",
+                          "column": 13,
+                          "line": 21
+                        }
+                      }
+                    ],
+                    "status": "unexpected"
+                  }
+                ],
+                "id": "12975f3ff1f884ffbbdd-6080fdd1e97db96466a9",
+                "file": "login.test.ts",
+                "line": 3,
+                "column": 7
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "stats": {
+      "startTime": "2024-11-07T09:44:08.259Z",
+      "duration": 8289.205,
+      "expected": 0,
+      "skipped": 0,
+      "unexpected": 1,
+      "flaky": 0
+    }
+  }

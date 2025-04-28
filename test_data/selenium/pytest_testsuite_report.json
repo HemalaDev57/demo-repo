@@ -1,0 +1,100 @@
+{
+    "created": 1718812895.555469,
+    "duration": 12.8298659324646,
+    "exitcode": 0,
+    "root": "/Users/aramachandran/Downloads/seleniumTest/pytest",
+    "environment": {},
+    "summary": {
+        "passed": 2,
+        "total": 2,
+        "collected": 2
+    },
+    "collectors": [
+        {
+            "nodeid": "",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_defaultSuite.py",
+                    "type": "Module"
+                }
+            ]
+        },
+        {
+            "nodeid": "test_defaultSuite.py::TestDefaultSuite",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_defaultSuite.py::TestDefaultSuite::test_login",
+                    "type": "Function",
+                    "lineno": 22
+                },
+                {
+                    "nodeid": "test_defaultSuite.py::TestDefaultSuite::test_loginfailure",
+                    "type": "Function",
+                    "lineno": 34
+                }
+            ]
+        },
+        {
+            "nodeid": "test_defaultSuite.py",
+            "outcome": "passed",
+            "result": [
+                {
+                    "nodeid": "test_defaultSuite.py::TestDefaultSuite",
+                    "type": "Class"
+                }
+            ]
+        }
+    ],
+    "tests": [
+        {
+            "nodeid": "test_defaultSuite.py::TestDefaultSuite::test_login",
+            "lineno": 22,
+            "outcome": "passed",
+            "keywords": [
+                "test_login",
+                "TestDefaultSuite",
+                "test_defaultSuite.py",
+                "pytest",
+                ""
+            ],
+            "setup": {
+                "duration": 0.355599083006382,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 7.092295584036037,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 0.04506658297032118,
+                "outcome": "passed"
+            }
+        },
+        {
+            "nodeid": "test_defaultSuite.py::TestDefaultSuite::test_loginfailure",
+            "lineno": 34,
+            "outcome": "passed",
+            "keywords": [
+                "test_loginfailure",
+                "TestDefaultSuite",
+                "test_defaultSuite.py",
+                "pytest",
+                ""
+            ],
+            "setup": {
+                "duration": 0.2785319169051945,
+                "outcome": "passed"
+            },
+            "call": {
+                "duration": 4.949120249948464,
+                "outcome": "passed"
+            },
+            "teardown": {
+                "duration": 0.042774542002007365,
+                "outcome": "passed"
+            }
+        }
+    ]
+}

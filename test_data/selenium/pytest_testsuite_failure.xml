@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+	<testsuite name="pytest" errors="0" failures="1" skipped="0" tests="2" time="11.411" timestamp="2024-06-19T15:54:32.054927" hostname="aramachandran-MacBook-Pro">
+		<testcase classname="test_defaultSuite.TestDefaultSuite" name="test_login" time="5.962" />
+		<testcase classname="test_defaultSuite.TestDefaultSuite" name="test_loginfailure" time="5.358">
+			<failure message="AssertionError: assert 'https://the-...app.com/login' == 'https://the-...pp.com/secure'&#10;  &#10;  - https://the-internet.herokuapp.com/secure&#10;  ?                                    ^^^^^^&#10;  + https://the-internet.herokuapp.com/login&#10;  ?                                    ^^^^^">
+				self = &lt;test_defaultSuite.TestDefaultSuite object at 0x105b21eb0&gt;
+				
+				def test_loginfailure(self):
+				self.driver.get("https://the-internet.herokuapp.com/")
+				self.driver.set_window_size(1200, 957)
+				self.driver.find_element(By.LINK_TEXT, "Form Authentication").click()
+				self.driver.find_element(By.ID, "username").click()
+				self.driver.find_element(By.ID, "username").send_keys("tomcat")
+				self.driver.find_element(By.ID, "password").click()
+				self.driver.find_element(By.ID, "password").send_keys("SuperSecretPassword!")
+				self.driver.find_element(By.CSS_SELECTOR, ".fa").click()
+				&gt;     assert self.driver.current_url == "https://the-internet.herokuapp.com/secure"
+				E     AssertionError: assert 'https://the-...app.com/login' == 'https://the-...pp.com/secure'
+				E
+				E       - https://the-internet.herokuapp.com/secure
+				E       ?                                    ^^^^^^
+				E       + https://the-internet.herokuapp.com/login
+				E       ?                                    ^^^^^
+				
+				test_defaultSuite.py:44: AssertionError
+			</failure>
+		</testcase>
+	</testsuite>
+</testsuites>

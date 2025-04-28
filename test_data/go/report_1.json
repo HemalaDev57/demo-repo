@@ -1,0 +1,43 @@
+{
+ "results": {
+  "tool": {
+   "name": "gotest"
+  },
+  "summary": {
+   "tests": 4,
+   "passed": 4,
+   "failed": 0,
+   "pending": 0,
+   "skipped": 0,
+   "other": 0,
+   "start": 1729830073036,
+   "stop": 1729830073036
+  },
+  "tests": [
+   {
+    "name": "TestGetCommitSha",
+    "status": "passed",
+    "duration": 0,
+    "suite": "demo-app"
+   },
+   {
+    "name": "TestGetColor",
+    "status": "passed",
+    "duration": 0,
+    "suite": "demo-app"
+   },
+   {
+    "name": "TestGetTextColor",
+    "status": "passed",
+    "duration": 0,
+    "suite": "demo-app"
+   },
+   {
+    "name": "TestGetEnvironment",
+    "status": "passed",
+    "duration": 0,
+    "suite": "demo-app"
+   }
+  ]
+ }
+}

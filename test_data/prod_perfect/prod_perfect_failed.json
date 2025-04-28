@@ -1,0 +1,58 @@
+{
+    "tests": [
+      {
+        "status": "failed",
+        "test_name": "Test 50 Invite Users Prodperfect Preprod Free",
+        "execution_id": "894172d0-8056-4475-b1dd-7d0ee0e0e0db",
+        "errors": [
+          {
+            "message": "Error: \u001b[31mTimed out 15000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('ul[aria-labelledby=\"select-label\"]')\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('ul[aria-labelledby=\"select-label\"]')\u001b[22m\n",
+            "stack": "Error: \u001b[31mTimed out 15000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('ul[aria-labelledby=\"select-label\"]')\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('ul[aria-labelledby=\"select-label\"]')\u001b[22m\n\n    at /root/tests/test_3a3ba891_53e4_4041_a787_ff8230af73de.spec.js:86:68",
+            "location": {
+              "file": "/root/tests/test_3a3ba891_53e4_4041_a787_ff8230af73de.spec.js",
+              "column": 68,
+              "line": 86
+            },
+            "snippet": "  84 |   await page.locator('input[id=\"emails\"]').type(email);\n  85 |   await page.locator('div[id=\"role\"]').click();\n> 86 |   await expect(page.locator('ul[aria-labelledby=\"select-label\"]')).toBeVisible();\n     |                                                                    ^\n  87 |   await page.locator('li[data-value=\"user\"]').click();\n  88 |   await page.locator('button[data-testid=\"invite-users-submit-button\"]').click();\n  89 |   await expect(page.locator('div[class=\"SnackbarItem-message\"]:has-text(\"Error: Invitation not sent\")')).toBeVisible();"
+          }
+        ],
+        "test_id": "3a3ba891-53e4-4041-a787-ff8230af73de",
+        "testsuite_id": "7a37d638-9a1b-49bd-8c0c-51502b43bef5",
+        "runtime": 49434,
+        "updated_at": "2024-06-10T02:50:04.260895",
+        "submitted_at": "2024-06-10T02:47:04.719134",
+        "failing_step_id": null
+      },
+      {
+        "status": "failed",
+        "test_name": "Test 51 Invite Users ProdPerfect Preprod Team",
+        "execution_id": "894172d0-8056-4475-b1dd-7d0ee0e0e0db",
+      "errors": [
+          {
+            "message": "Error: \u001b[31mTimed out 15000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('ul[aria-labelledby=\"select-label\"]')\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('ul[aria-labelledby=\"select-label\"]')\u001b[22m\n",
+            "stack": "Error: \u001b[31mTimed out 15000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: locator('ul[aria-labelledby=\"select-label\"]')\nExpected: visible\nReceived: hidden\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('ul[aria-labelledby=\"select-label\"]')\u001b[22m\n\n    at /root/tests/test_d039f28f_bacc_48e6_9e27_79e5027ed59f.spec.js:81:70",
+            "location": {
+              "file": "/root/tests/test_d039f28f_bacc_48e6_9e27_79e5027ed59f.spec.js",
+              "column": 70,
+              "line": 81
+            },
+            "snippet": "  79 |     await page.locator('input[id=\"emails\"]').type(email0);\n  80 |     await page.locator('div[id=\"role\"]').click();\n> 81 |     await expect(page.locator('ul[aria-labelledby=\"select-label\"]')).toBeVisible();\n     |                                                                      ^\n  82 |     await page.locator('li[data-value=\"user\"]').click();\n  83 |     await page.locator('button[data-testid=\"invite-users-submit-button\"]').click();\n  84 |     await expect(page.locator('div[class=\"SnackbarItem-message\"]:has-text(\"Invitation successfully sent\")')).toBeVisible();"
+          }
+        ],  
+        "test_id": "d039f28f-bacc-48e6-9e27-79e5027ed59f",
+        "testsuite_id": "7a37d638-9a1b-49bd-8c0c-51502b43bef5",
+        "runtime": 33326,
+        "updated_at": "2024-06-10T02:51:30.430062",
+        "submitted_at": "2024-06-10T02:47:04.719134",
+        "failing_step_id": null
+      }
+    ],
+    "source": "cli",
+    "overrides": {},
+    "completed": true,
+    "completed_at": "2024-06-10 02:51:30.430062",
+    "id": "894172d0-8056-4475-b1dd-7d0ee0e0e0db",
+    "build_id": null,
+    "submitted_at": "2024-06-10T02:47:04.719134",
+    "submitted_by": null
+  }

@@ -1,0 +1,143 @@
+{
+    "numFailedTestSuites": 1,
+    "numFailedTests": 4,
+    "numPassedTestSuites": 0,
+    "numPassedTests": 1,
+    "numPendingTestSuites": 0,
+    "numPendingTests": 0,
+    "numRuntimeErrorTestSuites": 0,
+    "numTodoTests": 0,
+    "numTotalTestSuites": 1,
+    "numTotalTests": 5,
+    "openHandles": [],
+    "snapshot": {
+        "added": 0,
+        "didUpdate": false,
+        "failure": false,
+        "filesAdded": 0,
+        "filesRemoved": 0,
+        "filesRemovedList": [],
+        "filesUnmatched": 0,
+        "filesUpdated": 0,
+        "matched": 0,
+        "total": 0,
+        "unchecked": 0,
+        "uncheckedKeysByFile": [],
+        "unmatched": 0,
+        "updated": 0
+    },
+    "startTime": 1719049296053,
+    "success": false,
+    "testResults": [
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "Running project ManySuites",
+                        "Running suite Element suite"
+                    ],
+                    "duration": 24178,
+                    "failureDetails": [
+                        {
+                            "name": "TimeoutError",
+                            "remoteStacktrace": ""
+                        }
+                    ],
+                    "failureMessages": [
+                        "TimeoutError: Waiting for element to be located\nWait timed out after 15083ms during (checking if delete text is there ) assertText:css=.added-manually:Delete\n    at /opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/selenium-webdriver/lib/webdriver.js:911:22\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)"
+                    ],
+                    "fullName": "Running project ManySuites Running suite Element suite Running test Add element assert for delete",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "retryReasons": [],
+                    "status": "failed",
+                    "title": "Running test Add element assert for delete"
+                },
+                {
+                    "ancestorTitles": [
+                        "Running project ManySuites",
+                        "Running suite Element suite"
+                    ],
+                    "duration": 4161,
+                    "failureDetails": [
+                        {}
+                    ],
+                    "failureMessages": [
+                        "Error: Actual value 'Delete' did not match 'Not delete' during (assert will fail since text wont match ) assertText:css=.added-manually:Not delete\n    at WebDriverExecutor.doAssertText (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/webdriver.ts:1221:13)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at CommandNode._executeCommand (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback-tree/command-node.ts:152:18)\n    at CommandNode.execute (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback-tree/command-node.ts:112:20)\n    at Playback._executeCommand (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:560:22)\n    at Playback._executionLoop (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:438:18)\n    at Playback._executionLoop (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:495:14)\n    at Playback._executionLoop (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:495:14)\n    at Playback._executionLoop (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:495:14)\n    at Playback._executionLoop (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:495:14)\n    at /opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:346:9"
+                    ],
+                    "fullName": "Running project ManySuites Running suite Element suite Running test Add element assert failure for delete",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "retryReasons": [],
+                    "status": "failed",
+                    "title": "Running test Add element assert failure for delete"
+                },
+                {
+                    "ancestorTitles": [
+                        "Running project ManySuites",
+                        "Running suite Dropdown and A/B test suite"
+                    ],
+                    "duration": 4241,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "Running project ManySuites Running suite Dropdown and A/B test suite Running test a/b test pass",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "retryReasons": [],
+                    "status": "passed",
+                    "title": "Running test a/b test pass"
+                },
+                {
+                    "ancestorTitles": [
+                        "Running project ManySuites",
+                        "Running suite Dropdown and A/B test suite"
+                    ],
+                    "duration": 4461,
+                    "failureDetails": [
+                        {}
+                    ],
+                    "failureMessages": [
+                        "Error: Actual value '    Please select an option\n    Option 1\n    Option 2\n  ' did not match 'Option 1' during (assert fail) assertText:id=dropdown:Option 1\n    at WebDriverExecutor.doAssertText (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/webdriver.ts:1221:13)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at CommandNode._executeCommand (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback-tree/command-node.ts:152:18)\n    at CommandNode.execute (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback-tree/command-node.ts:112:20)\n    at Playback._executeCommand (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:560:22)\n    at Playback._executionLoop (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:438:18)\n    at Playback._executionLoop (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:495:14)\n    at Playback._executionLoop (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:495:14)\n    at Playback._executionLoop (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:495:14)\n    at Playback._executionLoop (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:495:14)\n    at Playback._executionLoop (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:495:14)\n    at /opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:346:9"
+                    ],
+                    "fullName": "Running project ManySuites Running suite Dropdown and A/B test suite Running test dropdown fail",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "retryReasons": [],
+                    "status": "failed",
+                    "title": "Running test dropdown fail"
+                },
+                {
+                    "ancestorTitles": [
+                        "Running project ManySuites",
+                        "Running suite Dropdown and A/B test suite"
+                    ],
+                    "duration": 4149,
+                    "failureDetails": [
+                        {}
+                    ],
+                    "failureMessages": [
+                        "Error: Actual value '    Please select an option\n    Option 1\n    Option 2\n  ' did not match 'Option 1' during (assert pass) assertText:id=dropdown:Option 1\n    at WebDriverExecutor.doAssertText (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/webdriver.ts:1221:13)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at CommandNode._executeCommand (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback-tree/command-node.ts:152:18)\n    at CommandNode.execute (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback-tree/command-node.ts:112:20)\n    at Playback._executeCommand (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:560:22)\n    at Playback._executionLoop (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:438:18)\n    at Playback._executionLoop (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:495:14)\n    at Playback._executionLoop (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:495:14)\n    at Playback._executionLoop (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:495:14)\n    at Playback._executionLoop (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:495:14)\n    at Playback._executionLoop (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:495:14)\n    at /opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:346:9"
+                    ],
+                    "fullName": "Running project ManySuites Running suite Dropdown and A/B test suite Running test dropdown pass",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "retryReasons": [],
+                    "status": "failed",
+                    "title": "Running test dropdown pass"
+                }
+            ],
+            "endTime": 1719049337494,
+            "message": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mRunning project ManySuites › Running suite Element suite › Running test Add element assert for delete\u001b[39m\u001b[22m\n\n    TimeoutError: Waiting for element to be located\n    Wait timed out after 15083ms during (checking if delete text is there ) assertText:css=.added-manually:Delete\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat \u001b[22m\u001b[2mnode_modules/selenium-webdriver/lib/webdriver.js\u001b[2m:911:22\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mRunning project ManySuites › Running suite Element suite › Running test Add element assert failure for delete\u001b[39m\u001b[22m\n\n    Actual value 'Delete' did not match 'Not delete' during (assert will fail since text wont match ) assertText:css=.added-manually:Not delete\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat WebDriverExecutor.doAssertText (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/webdriver.ts\u001b[2m:1221:13)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat CommandNode._executeCommand (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback-tree/command-node.ts\u001b[2m:152:18)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat CommandNode.execute (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback-tree/command-node.ts\u001b[2m:112:20)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executeCommand (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:560:22)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executionLoop (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:438:18)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executionLoop (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:495:14)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executionLoop (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:495:14)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executionLoop (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:495:14)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executionLoop (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:495:14)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat \u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:346:9\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mRunning project ManySuites › Running suite Dropdown and A/B test suite › Running test dropdown fail\u001b[39m\u001b[22m\n\n    Actual value '    Please select an option\n        Option 1\n        Option 2\n      ' did not match 'Option 1' during (assert fail) assertText:id=dropdown:Option 1\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat WebDriverExecutor.doAssertText (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/webdriver.ts\u001b[2m:1221:13)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat CommandNode._executeCommand (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback-tree/command-node.ts\u001b[2m:152:18)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat CommandNode.execute (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback-tree/command-node.ts\u001b[2m:112:20)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executeCommand (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:560:22)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executionLoop (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:438:18)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executionLoop (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:495:14)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executionLoop (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:495:14)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executionLoop (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:495:14)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executionLoop (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:495:14)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executionLoop (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:495:14)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat \u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:346:9\u001b[22m\u001b[2m\u001b[22m\n\n\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mRunning project ManySuites › Running suite Dropdown and A/B test suite › Running test dropdown pass\u001b[39m\u001b[22m\n\n    Actual value '    Please select an option\n        Option 1\n        Option 2\n      ' did not match 'Option 1' during (assert pass) assertText:id=dropdown:Option 1\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat WebDriverExecutor.doAssertText (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/webdriver.ts\u001b[2m:1221:13)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat CommandNode._executeCommand (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback-tree/command-node.ts\u001b[2m:152:18)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat CommandNode.execute (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback-tree/command-node.ts\u001b[2m:112:20)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executeCommand (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:560:22)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executionLoop (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:438:18)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executionLoop (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:495:14)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executionLoop (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:495:14)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executionLoop (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:495:14)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executionLoop (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:495:14)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executionLoop (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:495:14)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat \u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:346:9\u001b[22m\u001b[2m\u001b[22m\n",
+            "name": "/opt/homebrew/lib/node_modules/selenium-side-runner/dist/main.test.js",
+            "startTime": 1719049296086,
+            "status": "failed",
+            "summary": ""
+        }
+    ],
+    "wasInterrupted": false
+}

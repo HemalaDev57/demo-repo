@@ -1,0 +1,4 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,success,bytes,grpThreads,allThreads,Latency,IdleTime,Connect
+1624077628123,123,CalculatorTest.testAddition,200,OK,Thread Group 1-1,true,1024,1,1,123,0,23
+1624077628234,234,CalculatorTest.testSubtraction,500,Internal Server Error,Thread Group 1-1,false,2048,1,1,234,0,34
+1624077628345,345,CalculatorTest.testMultiplication,200,OK,Thread Group 1-1,true,512,1,1,345,0,45

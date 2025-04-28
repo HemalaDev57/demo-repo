@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report>
+    <Metadata>
+        <GeneratedOn>2024-06-17T10:30:00</GeneratedOn>
+        <ToscaVersion>14.0</ToscaVersion>
+    </Metadata>
+    <TestSuite>
+        <Name>Regression Suite</Name>
+        <ID>12345</ID>
+        <Description>Daily regression test suite</Description>
+        <TestCases>
+            <TestCase>
+                <ID>TC001</ID>
+                <Name>Login Test</Name>
+                <Status>Passed</Status>
+                <StartTime>2024-06-17T10:31:00</StartTime>
+                <EndTime>2024-06-17T10:32:00</EndTime>
+                <TestSteps>
+                    <TestStep>
+                        <Name>Enter Username</Name>
+                        <Status>Passed</Status>
+                        <ExecutionTime>2024-06-17T10:31:05</ExecutionTime>
+                        <Details>Entered 'user123'</Details>
+                    </TestStep>
+                    <TestStep>
+                        <Name>Enter Password</Name>
+                        <Status>Passed</Status>
+                        <ExecutionTime>2024-06-17T10:31:10</ExecutionTime>
+                        <Details>Entered 'password'</Details>
+                    </TestStep>
+                </TestSteps>
+            </TestCase>
+            <TestCase>
+                <ID>TC002</ID>
+                <Name>Logout Test</Name>
+                <Status>Failed</Status>
+                <StartTime>2024-06-17T10:33:00</StartTime>
+                <EndTime>2024-06-17T10:34:00</EndTime>
+                <TestSteps>
+                    <TestStep>
+                        <Name>Click Logout</Name>
+                        <Status>Failed</Status>
+                        <ExecutionTime>2024-06-17T10:33:05</ExecutionTime>
+                        <Details>Unable to locate Logout button.</Details>
+                    </TestStep>
+                </TestSteps>
+                <Logs>
+                    <Log>
+                        <Level>Error</Level>
+                        <Message>Unable to locate Logout button.</Message>
+                        <Timestamp>2024-06-17T10:34:00</Timestamp>
+                    </Log>
+                </Logs>
+            </TestCase>
+        </TestCases>
+    </TestSuite>
+    <Summary>
+        <TotalTestCases>2</TotalTestCases>
+        <PassedTestCases>1</PassedTestCases>
+        <FailedTestCases>1</FailedTestCases>
+        <ExecutionTime>00:03:00</ExecutionTime>
+    </Summary>
+</Report>

@@ -1,0 +1,376 @@
+{
+  "config": {
+    "configFile": "/Users/rnillavazagan/go/src/github.com/cloudbees/aspm-test-automation/playwright.config.ts",
+    "rootDir": "/Users/rnillavazagan/go/src/github.com/cloudbees/aspm-test-automation/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": "/Users/rnillavazagan/go/src/github.com/cloudbees/aspm-test-automation/core/global.setup.ts",
+    "globalTeardown": "/Users/rnillavazagan/go/src/github.com/cloudbees/aspm-test-automation/core/global.tearDown.ts",
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "open": "always"
+        }
+      ],
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ],
+      [
+        "/Users/rnillavazagan/go/src/github.com/cloudbees/aspm-test-automation/node_modules/allure-playwright/dist/index.js",
+        {
+          "open": "always"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/rnillavazagan/go/src/github.com/cloudbees/aspm-test-automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chrome",
+        "name": "chrome",
+        "testDir": "/Users/rnillavazagan/go/src/github.com/cloudbees/aspm-test-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 300000
+      },
+      {
+        "outputDir": "/Users/rnillavazagan/go/src/github.com/cloudbees/aspm-test-automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/rnillavazagan/go/src/github.com/cloudbees/aspm-test-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 300000
+      },
+      {
+        "outputDir": "/Users/rnillavazagan/go/src/github.com/cloudbees/aspm-test-automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "safari",
+        "name": "safari",
+        "testDir": "/Users/rnillavazagan/go/src/github.com/cloudbees/aspm-test-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 300000
+      },
+      {
+        "outputDir": "/Users/rnillavazagan/go/src/github.com/cloudbees/aspm-test-automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "api",
+        "name": "api",
+        "testDir": "/Users/rnillavazagan/go/src/github.com/cloudbees/aspm-test-automation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 300000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.44.0",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "integration.test.ts",
+      "file": "integration.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Switch to Org,",
+          "file": "integration.test.ts",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "@Smoke Switch to org successfully",
+              "ok": false,
+              "tags": [
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "failed",
+                      "duration": 77621,
+                      "error": {
+                        "message": "Error: Click operation failed: locator.click: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- waiting for locator('//*[@data-testid=\"switch-org-CloudBees PreProd\"]')\u001b[22m\n",
+                        "stack": "Error: Click operation failed: locator.click: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- waiting for locator('//*[@data-testid=\"switch-org-CloudBees PreProd\"]')\u001b[22m\n\n    at LoginPage.click (/Users/rnillavazagan/go/src/github.com/cloudbees/aspm-test-automation/core/actions.core.ts:27:13)\n    at LoginPage.switchToOrg (/Users/rnillavazagan/go/src/github.com/cloudbees/aspm-test-automation/pages/loginPage.ts:39:5)\n    at /Users/rnillavazagan/go/src/github.com/cloudbees/aspm-test-automation/tests/integration.test.ts:19:5",
+                        "location": {
+                          "file": "/Users/rnillavazagan/go/src/github.com/cloudbees/aspm-test-automation/core/actions.core.ts",
+                          "column": 13,
+                          "line": 27
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../core/actions.core.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     } \u001b[36mcatch\u001b[39m (error) {\n \u001b[90m 26 |\u001b[39m       errorLog(\u001b[32m\"Unable to click on '\"\u001b[39m \u001b[33m+\u001b[39m control\u001b[33m.\u001b[39mcontrolDescription \u001b[33m+\u001b[39m \u001b[32m\"'\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Click operation failed: \"\u001b[39m \u001b[33m+\u001b[39m error\u001b[33m.\u001b[39mmessage)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m   }\n \u001b[90m 30 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/rnillavazagan/go/src/github.com/cloudbees/aspm-test-automation/core/actions.core.ts",
+                            "column": 13,
+                            "line": 27
+                          },
+                          "message": "Error: Click operation failed: locator.click: Target page, context or browser has been closed\nCall log:\n  \u001b[2m- waiting for locator('//*[@data-testid=\"switch-org-CloudBees PreProd\"]')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../core/actions.core.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m     } \u001b[36mcatch\u001b[39m (error) {\n \u001b[90m 26 |\u001b[39m       errorLog(\u001b[32m\"Unable to click on '\"\u001b[39m \u001b[33m+\u001b[39m control\u001b[33m.\u001b[39mcontrolDescription \u001b[33m+\u001b[39m \u001b[32m\"'\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m\"Click operation failed: \"\u001b[39m \u001b[33m+\u001b[39m error\u001b[33m.\u001b[39mmessage)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m     }\n \u001b[90m 29 |\u001b[39m   }\n \u001b[90m 30 |\u001b[39m\u001b[0m\n\n\u001b[2m    at LoginPage.click (/Users/rnillavazagan/go/src/github.com/cloudbees/aspm-test-automation/core/actions.core.ts:27:13)\u001b[22m\n\u001b[2m    at LoginPage.switchToOrg (/Users/rnillavazagan/go/src/github.com/cloudbees/aspm-test-automation/pages/loginPage.ts:39:5)\u001b[22m\n\u001b[2m    at /Users/rnillavazagan/go/src/github.com/cloudbees/aspm-test-automation/tests/integration.test.ts:19:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "ACTION: Navigated to URL: https://saas-preprod.beescloud.com/\n"
+                        },
+                        {
+                          "text": "INFO: 'Sign-in button' is displayed\n"
+                        },
+                        {
+                          "text": "VERIFICATION: PASSED 'Sign-in button' displayed status is 'true'\n"
+                        },
+                        {
+                          "text": "ACTION: Clicked on 'Sign-in button'\n"
+                        },
+                        {
+                          "text": "ACTION: Entered 'cbc-qa-automation@cloudbees.com' in 'Username' textbox\n"
+                        },
+                        {
+                          "text": "ACTION: Entered ********* in 'Password'\n"
+                        },
+                        {
+                          "text": "ACTION: Clicked on 'Sign-in button'\n"
+                        },
+                        {
+                          "text": "Logged in successfully\n"
+                        },
+                        {
+                          "text": "ACTION: Clicked on 'Org Switcher button'\n"
+                        },
+                        {
+                          "text": "ACTION: Entered 'CloudBees PreProd' in 'Org Search Filter' textbox\n"
+                        },
+                        {
+                          "text": "ERROR: Unable to click on 'CloudBees PreProd org'\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "ACTION: Navigated to URL: https://saas-preprod.beescloud.com/",
+                          "duration": 2
+                        },
+                        {
+                          "title": "ACTION: Clicked on 'Sign-in button'",
+                          "duration": 0
+                        },
+                        {
+                          "title": "ACTION: Entered 'cbc-qa-automation@cloudbees.com' in 'Username' textbox",
+                          "duration": 0
+                        },
+                        {
+                          "title": "ACTION: Entered ********* in 'Password'",
+                          "duration": 1
+                        },
+                        {
+                          "title": "ACTION: Clicked on 'Sign-in button'",
+                          "duration": 0
+                        },
+                        {
+                          "title": "Logged in successfully",
+                          "duration": 0
+                        },
+                        {
+                          "title": "ACTION: Clicked on 'Org Switcher button'",
+                          "duration": 1
+                        },
+                        {
+                          "title": "ACTION: Entered 'CloudBees PreProd' in 'Org Search Filter' textbox",
+                          "duration": 0
+                        },
+                        {
+                          "title": "ERROR: Unable to click on 'CloudBees PreProd org'",
+                          "duration": 0
+                        }
+                      ],
+                      "startTime": "2024-09-25T04:37:34.992Z",
+                      "attachments": [],
+                      "errorLocation": {
+                        "file": "/Users/rnillavazagan/go/src/github.com/cloudbees/aspm-test-automation/core/actions.core.ts",
+                        "column": 13,
+                        "line": 27
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "6099eb35ccee2f53ef4e-b73a00b46d396421ca50",
+              "file": "integration.test.ts",
+              "line": 16,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "login.test.ts",
+      "file": "login.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "The login page,",
+          "file": "login.test.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "@Smoke Login to saas application successfully",
+              "ok": true,
+              "tags": [
+                "Smoke"
+              ],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 24086,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "ACTION: Navigated to URL: https://saas-preprod.beescloud.com/\n"
+                        },
+                        {
+                          "text": "INFO: 'Sign-in button' is displayed\n"
+                        },
+                        {
+                          "text": "VERIFICATION: PASSED 'Sign-in button' displayed status is 'true'\n"
+                        },
+                        {
+                          "text": "ACTION: Clicked on 'Sign-in button'\n"
+                        },
+                        {
+                          "text": "ACTION: Entered 'cbc-qa-automation@cloudbees.com' in 'Username' textbox\n"
+                        },
+                        {
+                          "text": "ACTION: Entered ********* in 'Password'\n"
+                        },
+                        {
+                          "text": "ACTION: Clicked on 'Sign-in button'\n"
+                        },
+                        {
+                          "text": "Logged in successfully\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "ACTION: Navigated to URL: https://saas-preprod.beescloud.com/",
+                          "duration": 2
+                        },
+                        {
+                          "title": "ACTION: Clicked on 'Sign-in button'",
+                          "duration": 0
+                        },
+                        {
+                          "title": "ACTION: Entered 'cbc-qa-automation@cloudbees.com' in 'Username' textbox",
+                          "duration": 0
+                        },
+                        {
+                          "title": "ACTION: Entered ********* in 'Password'",
+                          "duration": 2
+                        },
+                        {
+                          "title": "ACTION: Clicked on 'Sign-in button'",
+                          "duration": 1
+                        },
+                        {
+                          "title": "Logged in successfully",
+                          "duration": 0
+                        }
+                      ],
+                      "startTime": "2024-09-25T04:37:34.992Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/rnillavazagan/go/src/github.com/cloudbees/aspm-test-automation/test-results/login-The-login-page-Smoke-e3131-as-application-successfully-chrome/test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "12975f3ff1f884ffbbdd-6080fdd1e97db96466a9",
+              "file": "login.test.ts",
+              "line": 5,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-09-25T04:37:34.673Z",
+    "duration": 78286.002,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

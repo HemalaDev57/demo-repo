@@ -1,0 +1,80 @@
+{
+    "numFailedTestSuites": 1,
+    "numFailedTests": 1,
+    "numPassedTestSuites": 0,
+    "numPassedTests": 1,
+    "numPendingTestSuites": 0,
+    "numPendingTests": 0,
+    "numRuntimeErrorTestSuites": 0,
+    "numTodoTests": 0,
+    "numTotalTestSuites": 1,
+    "numTotalTests": 2,
+    "openHandles": [],
+    "snapshot": {
+        "added": 0,
+        "didUpdate": false,
+        "failure": false,
+        "filesAdded": 0,
+        "filesRemoved": 0,
+        "filesRemovedList": [],
+        "filesUnmatched": 0,
+        "filesUpdated": 0,
+        "matched": 0,
+        "total": 0,
+        "unchecked": 0,
+        "uncheckedKeysByFile": [],
+        "unmatched": 0,
+        "updated": 0
+    },
+    "startTime": 1718869094450,
+    "success": false,
+    "testResults": [
+        {
+            "assertionResults": [
+                {
+                    "ancestorTitles": [
+                        "Running project AuthTestSelenium",
+                        "Running suite Auth test suite"
+                    ],
+                    "duration": 6270,
+                    "failureDetails": [],
+                    "failureMessages": [],
+                    "fullName": "Running project AuthTestSelenium Running suite Auth test suite Running test login",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "retryReasons": [],
+                    "status": "passed",
+                    "title": "Running test login"
+                },
+                {
+                    "ancestorTitles": [
+                        "Running project AuthTestSelenium",
+                        "Running suite Auth test suite"
+                    ],
+                    "duration": 5576,
+                    "failureDetails": [
+                        {}
+                    ],
+                    "failureMessages": [
+                        "Error: Actual value 'Login' did not match 'Logout' during (asserting if logout text is present) assertText:css=.radius:Logout\n    at WebDriverExecutor.doAssertText (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/webdriver.ts:1221:13)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at CommandNode._executeCommand (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback-tree/command-node.ts:152:18)\n    at CommandNode.execute (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback-tree/command-node.ts:112:20)\n    at Playback._executeCommand (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:560:22)\n    at Playback._executionLoop (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:438:18)\n    at Playback._executionLoop (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:495:14)\n    at Playback._executionLoop (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:495:14)\n    at Playback._executionLoop (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:495:14)\n    at Playback._executionLoop (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:495:14)\n    at Playback._executionLoop (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:495:14)\n    at Playback._executionLoop (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:495:14)\n    at Playback._executionLoop (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:495:14)\n    at Playback._executionLoop (/opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:495:14)\n    at /opt/homebrew/lib/node_modules/selenium-side-runner/node_modules/@seleniumhq/side-runtime/src/playback.ts:346:9"
+                    ],
+                    "fullName": "Running project AuthTestSelenium Running suite Auth test suite Running test login failure",
+                    "invocations": 1,
+                    "location": null,
+                    "numPassingAsserts": 0,
+                    "retryReasons": [],
+                    "status": "failed",
+                    "title": "Running test login failure"
+                }
+            ],
+            "endTime": 1718869106587,
+            "message": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[22m\u001b[1mRunning project AuthTestSelenium › Running suite Auth test suite › Running test login failure\u001b[39m\u001b[22m\n\n    Actual value 'Login' did not match 'Logout' during (asserting if logout text is present) assertText:css=.radius:Logout\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat WebDriverExecutor.doAssertText (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/webdriver.ts\u001b[2m:1221:13)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat CommandNode._executeCommand (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback-tree/command-node.ts\u001b[2m:152:18)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat CommandNode.execute (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback-tree/command-node.ts\u001b[2m:112:20)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executeCommand (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:560:22)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executionLoop (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:438:18)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executionLoop (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:495:14)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executionLoop (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:495:14)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executionLoop (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:495:14)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executionLoop (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:495:14)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executionLoop (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:495:14)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executionLoop (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:495:14)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executionLoop (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:495:14)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Playback._executionLoop (\u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:495:14)\u001b[22m\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat \u001b[22m\u001b[2mnode_modules/@seleniumhq/side-runtime/src/playback.ts\u001b[2m:346:9\u001b[22m\u001b[2m\u001b[22m\n",
+            "name": "/opt/homebrew/lib/node_modules/selenium-side-runner/dist/main.test.js",
+            "startTime": 1718869094480,
+            "status": "failed",
+            "summary": ""
+        }
+    ],
+    "wasInterrupted": false
+}

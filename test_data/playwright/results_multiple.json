@@ -1,0 +1,655 @@
+{
+    "config": {
+      "configFile": "/Users/rjain/git/aspm-test-automation/playwright.config.ts",
+      "rootDir": "/Users/rjain/git/aspm-test-automation/tests",
+      "forbidOnly": false,
+      "fullyParallel": false,
+      "globalSetup": "/Users/rjain/git/aspm-test-automation/core/global.setup.ts",
+      "globalTeardown": "/Users/rjain/git/aspm-test-automation/core/global.tearDown.ts",
+      "globalTimeout": 0,
+      "grep": {},
+      "grepInvert": null,
+      "maxFailures": 0,
+      "metadata": {
+        "actualWorkers": 6
+      },
+      "preserveOutput": "always",
+      "reporter": [
+        [
+          "html",
+          {
+            "open": "always"
+          }
+        ],
+        [
+          "json",
+          {
+            "outputFile": "./results.json"
+          }
+        ],
+        [
+          "line",
+          null
+        ],
+        [
+          "/Users/rjain/git/aspm-test-automation/node_modules/allure-playwright/dist/index.js",
+          {
+            "open": "never"
+          }
+        ]
+      ],
+      "reportSlowTests": {
+        "max": 5,
+        "threshold": 15000
+      },
+      "quiet": false,
+      "projects": [
+        {
+          "outputDir": "/Users/rjain/git/aspm-test-automation/test-results",
+          "repeatEach": 1,
+          "retries": 0,
+          "metadata": {},
+          "id": "chrome",
+          "name": "chrome",
+          "testDir": "/Users/rjain/git/aspm-test-automation/tests",
+          "testIgnore": [],
+          "testMatch": [
+            "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+          ],
+          "timeout": 120000
+        },
+        {
+          "outputDir": "/Users/rjain/git/aspm-test-automation/test-results",
+          "repeatEach": 1,
+          "retries": 0,
+          "metadata": {},
+          "id": "firefox",
+          "name": "firefox",
+          "testDir": "/Users/rjain/git/aspm-test-automation/tests",
+          "testIgnore": [],
+          "testMatch": [
+            "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+          ],
+          "timeout": 120000
+        },
+        {
+          "outputDir": "/Users/rjain/git/aspm-test-automation/test-results",
+          "repeatEach": 1,
+          "retries": 0,
+          "metadata": {},
+          "id": "safari",
+          "name": "safari",
+          "testDir": "/Users/rjain/git/aspm-test-automation/tests",
+          "testIgnore": [],
+          "testMatch": [
+            "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+          ],
+          "timeout": 120000
+        },
+        {
+          "outputDir": "/Users/rjain/git/aspm-test-automation/test-results",
+          "repeatEach": 1,
+          "retries": 0,
+          "metadata": {},
+          "id": "api",
+          "name": "api",
+          "testDir": "/Users/rjain/git/aspm-test-automation/tests",
+          "testIgnore": [],
+          "testMatch": [
+            "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+          ],
+          "timeout": 120000
+        }
+      ],
+      "shard": null,
+      "updateSnapshots": "missing",
+      "version": "1.44.0",
+      "workers": 6,
+      "webServer": null
+    },
+    "suites": [
+      {
+        "title": "Components.test.ts",
+        "file": "Components.test.ts",
+        "column": 0,
+        "line": 0,
+        "specs": [],
+        "suites": [
+          {
+            "title": "The components page,",
+            "file": "Components.test.ts",
+            "line": 2,
+            "column": 6,
+            "specs": [
+              {
+                "title": "@Sanity @E2E Create component",
+                "ok": true,
+                "tags": [
+                  "Sanity",
+                  "E2E"
+                ],
+                "tests": [
+                  {
+                    "timeout": 120000,
+                    "annotations": [
+                      {
+                        "type": "skip"
+                      }
+                    ],
+                    "expectedStatus": "skipped",
+                    "projectId": "chrome",
+                    "projectName": "chrome",
+                    "results": [
+                      {
+                        "workerIndex": -1,
+                        "status": "skipped",
+                        "duration": 0,
+                        "errors": [],
+                        "stdout": [],
+                        "stderr": [],
+                        "retry": 0,
+                        "startTime": "2024-11-07T09:50:48.390Z",
+                        "attachments": []
+                      }
+                    ],
+                    "status": "skipped"
+                  }
+                ],
+                "id": "7469fbff5b7a4fa2a46e-44cc917bf3825f151a86",
+                "file": "Components.test.ts",
+                "line": 6,
+                "column": 8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "E2E.test.ts",
+        "file": "E2E.test.ts",
+        "column": 0,
+        "line": 0,
+        "specs": [],
+        "suites": [
+          {
+            "title": "The E2E Test,",
+            "file": "E2E.test.ts",
+            "line": 6,
+            "column": 15,
+            "specs": [
+              {
+                "title": "@Gosec @E2E Test to validate Gosec scanner",
+                "ok": true,
+                "tags": [
+                  "Gosec",
+                  "E2E"
+                ],
+                "tests": [
+                  {
+                    "timeout": 120000,
+                    "annotations": [
+                      {
+                        "type": "skip"
+                      }
+                    ],
+                    "expectedStatus": "skipped",
+                    "projectId": "chrome",
+                    "projectName": "chrome",
+                    "results": [
+                      {
+                        "workerIndex": -1,
+                        "status": "skipped",
+                        "duration": 0,
+                        "errors": [],
+                        "stdout": [],
+                        "stderr": [],
+                        "retry": 0,
+                        "startTime": "2024-11-07T09:50:48.391Z",
+                        "attachments": []
+                      }
+                    ],
+                    "status": "skipped"
+                  }
+                ],
+                "id": "453f34c385bf4113cc30-5e559d161efa9f0c9654",
+                "file": "E2E.test.ts",
+                "line": 11,
+                "column": 8
+              },
+              {
+                "title": "@Gitleaks @E2E Test to validate Gitleaks scanner",
+                "ok": true,
+                "tags": [
+                  "Gitleaks",
+                  "E2E"
+                ],
+                "tests": [
+                  {
+                    "timeout": 120000,
+                    "annotations": [
+                      {
+                        "type": "skip"
+                      }
+                    ],
+                    "expectedStatus": "skipped",
+                    "projectId": "chrome",
+                    "projectName": "chrome",
+                    "results": [
+                      {
+                        "workerIndex": -1,
+                        "status": "skipped",
+                        "duration": 0,
+                        "errors": [],
+                        "stdout": [],
+                        "stderr": [],
+                        "retry": 0,
+                        "startTime": "2024-11-07T09:50:48.391Z",
+                        "attachments": []
+                      }
+                    ],
+                    "status": "skipped"
+                  }
+                ],
+                "id": "453f34c385bf4113cc30-992b5b27e161d7074284",
+                "file": "E2E.test.ts",
+                "line": 66,
+                "column": 8
+              },
+              {
+                "title": "@Njsscan @E2E Test to validate Njsscanner",
+                "ok": true,
+                "tags": [
+                  "Njsscan",
+                  "E2E"
+                ],
+                "tests": [
+                  {
+                    "timeout": 120000,
+                    "annotations": [
+                      {
+                        "type": "skip"
+                      }
+                    ],
+                    "expectedStatus": "skipped",
+                    "projectId": "chrome",
+                    "projectName": "chrome",
+                    "results": [
+                      {
+                        "workerIndex": -1,
+                        "status": "skipped",
+                        "duration": 0,
+                        "errors": [],
+                        "stdout": [],
+                        "stderr": [],
+                        "retry": 0,
+                        "startTime": "2024-11-07T09:50:48.391Z",
+                        "attachments": []
+                      }
+                    ],
+                    "status": "skipped"
+                  }
+                ],
+                "id": "453f34c385bf4113cc30-eb904da45f5a93827846",
+                "file": "E2E.test.ts",
+                "line": 121,
+                "column": 8
+              },
+              {
+                "title": "@Trivy @E2E Test to validate Trivy scanner",
+                "ok": true,
+                "tags": [
+                  "Trivy",
+                  "E2E"
+                ],
+                "tests": [
+                  {
+                    "timeout": 120000,
+                    "annotations": [
+                      {
+                        "type": "skip"
+                      }
+                    ],
+                    "expectedStatus": "skipped",
+                    "projectId": "chrome",
+                    "projectName": "chrome",
+                    "results": [
+                      {
+                        "workerIndex": -1,
+                        "status": "skipped",
+                        "duration": 0,
+                        "errors": [],
+                        "stdout": [],
+                        "stderr": [],
+                        "retry": 0,
+                        "startTime": "2024-11-07T09:50:48.391Z",
+                        "attachments": []
+                      }
+                    ],
+                    "status": "skipped"
+                  }
+                ],
+                "id": "453f34c385bf4113cc30-b481bf957c79e1141f8a",
+                "file": "E2E.test.ts",
+                "line": 176,
+                "column": 8
+              },
+              {
+                "title": "@FindSecBugs @E2E Test to validate Findsecbugs scanner",
+                "ok": true,
+                "tags": [
+                  "FindSecBugs",
+                  "E2E"
+                ],
+                "tests": [
+                  {
+                    "timeout": 120000,
+                    "annotations": [
+                      {
+                        "type": "skip"
+                      }
+                    ],
+                    "expectedStatus": "skipped",
+                    "projectId": "chrome",
+                    "projectName": "chrome",
+                    "results": [
+                      {
+                        "workerIndex": -1,
+                        "status": "skipped",
+                        "duration": 0,
+                        "errors": [],
+                        "stdout": [],
+                        "stderr": [],
+                        "retry": 0,
+                        "startTime": "2024-11-07T09:50:48.392Z",
+                        "attachments": []
+                      }
+                    ],
+                    "status": "skipped"
+                  }
+                ],
+                "id": "453f34c385bf4113cc30-32dc646527d79681e76c",
+                "file": "E2E.test.ts",
+                "line": 230,
+                "column": 8
+              },
+              {
+                "title": "@Grype @E2E Test to validate Grype scanner",
+                "ok": true,
+                "tags": [
+                  "Grype",
+                  "E2E"
+                ],
+                "tests": [
+                  {
+                    "timeout": 120000,
+                    "annotations": [
+                      {
+                        "type": "skip"
+                      }
+                    ],
+                    "expectedStatus": "skipped",
+                    "projectId": "chrome",
+                    "projectName": "chrome",
+                    "results": [
+                      {
+                        "workerIndex": -1,
+                        "status": "skipped",
+                        "duration": 0,
+                        "errors": [],
+                        "stdout": [],
+                        "stderr": [],
+                        "retry": 0,
+                        "startTime": "2024-11-07T09:50:48.392Z",
+                        "attachments": []
+                      }
+                    ],
+                    "status": "skipped"
+                  }
+                ],
+                "id": "453f34c385bf4113cc30-5f78d554a3e6d1eed3d2",
+                "file": "E2E.test.ts",
+                "line": 273,
+                "column": 8
+              },
+              {
+                "title": "@SyftSBOM @E2E Test to validate Grype scanner",
+                "ok": true,
+                "tags": [
+                  "SyftSBOM",
+                  "E2E"
+                ],
+                "tests": [
+                  {
+                    "timeout": 120000,
+                    "annotations": [
+                      {
+                        "type": "skip"
+                      }
+                    ],
+                    "expectedStatus": "skipped",
+                    "projectId": "chrome",
+                    "projectName": "chrome",
+                    "results": [
+                      {
+                        "workerIndex": -1,
+                        "status": "skipped",
+                        "duration": 0,
+                        "errors": [],
+                        "stdout": [],
+                        "stderr": [],
+                        "retry": 0,
+                        "startTime": "2024-11-07T09:50:48.392Z",
+                        "attachments": []
+                      }
+                    ],
+                    "status": "skipped"
+                  }
+                ],
+                "id": "453f34c385bf4113cc30-39a241453b1a17945283",
+                "file": "E2E.test.ts",
+                "line": 322,
+                "column": 8
+              },
+              {
+                "title": "@E2E E2E test with Github PAT Integration",
+                "ok": true,
+                "tags": [
+                  "E2E"
+                ],
+                "tests": [
+                  {
+                    "timeout": 120000,
+                    "annotations": [
+                      {
+                        "type": "skip"
+                      }
+                    ],
+                    "expectedStatus": "skipped",
+                    "projectId": "chrome",
+                    "projectName": "chrome",
+                    "results": [
+                      {
+                        "workerIndex": -1,
+                        "status": "skipped",
+                        "duration": 0,
+                        "errors": [],
+                        "stdout": [],
+                        "stderr": [],
+                        "retry": 0,
+                        "startTime": "2024-11-07T09:50:48.392Z",
+                        "attachments": []
+                      }
+                    ],
+                    "status": "skipped"
+                  }
+                ],
+                "id": "453f34c385bf4113cc30-3f0011185ba4781c4aa8",
+                "file": "E2E.test.ts",
+                "line": 347,
+                "column": 8
+              },
+              {
+                "title": "@E2E E2E components test",
+                "ok": true,
+                "tags": [
+                  "E2E"
+                ],
+                "tests": [
+                  {
+                    "timeout": 120000,
+                    "annotations": [
+                      {
+                        "type": "skip"
+                      }
+                    ],
+                    "expectedStatus": "skipped",
+                    "projectId": "chrome",
+                    "projectName": "chrome",
+                    "results": [
+                      {
+                        "workerIndex": -1,
+                        "status": "skipped",
+                        "duration": 0,
+                        "errors": [],
+                        "stdout": [],
+                        "stderr": [],
+                        "retry": 0,
+                        "startTime": "2024-11-07T09:50:48.392Z",
+                        "attachments": []
+                      }
+                    ],
+                    "status": "skipped"
+                  }
+                ],
+                "id": "453f34c385bf4113cc30-e4787fbcddb5d7b53575",
+                "file": "E2E.test.ts",
+                "line": 389,
+                "column": 8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "login.test.ts",
+        "file": "login.test.ts",
+        "column": 0,
+        "line": 0,
+        "specs": [],
+        "suites": [
+          {
+            "title": "The login page,",
+            "file": "login.test.ts",
+            "line": 2,
+            "column": 6,
+            "specs": [
+              {
+                "title": "@Smoke @E2E Login to saas application successfully",
+                "ok": true,
+                "tags": [
+                  "Smoke",
+                  "E2E"
+                ],
+                "tests": [
+                  {
+                    "timeout": 120000,
+                    "annotations": [
+                      {
+                        "type": "skip"
+                      }
+                    ],
+                    "expectedStatus": "skipped",
+                    "projectId": "chrome",
+                    "projectName": "chrome",
+                    "results": [
+                      {
+                        "workerIndex": -1,
+                        "status": "skipped",
+                        "duration": 0,
+                        "errors": [],
+                        "stdout": [],
+                        "stderr": [],
+                        "retry": 0,
+                        "startTime": "2024-11-07T09:50:48.393Z",
+                        "attachments": []
+                      }
+                    ],
+                    "status": "skipped"
+                  }
+                ],
+                "id": "12975f3ff1f884ffbbdd-6f7e76c8490516d72a0d",
+                "file": "login.test.ts",
+                "line": 3,
+                "column": 8
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "slaConfig.test.ts",
+        "file": "slaConfig.test.ts",
+        "column": 0,
+        "line": 0,
+        "specs": [],
+        "suites": [
+          {
+            "title": "The SLA Configuration page with admin role,",
+            "file": "slaConfig.test.ts",
+            "line": 4,
+            "column": 6,
+            "specs": [
+              {
+                "title": "@slaConfig @E2E Validate SLA Config is setup successfully in root org",
+                "ok": true,
+                "tags": [
+                  "slaConfig",
+                  "E2E"
+                ],
+                "tests": [
+                  {
+                    "timeout": 120000,
+                    "annotations": [
+                      {
+                        "type": "skip"
+                      }
+                    ],
+                    "expectedStatus": "skipped",
+                    "projectId": "chrome",
+                    "projectName": "chrome",
+                    "results": [
+                      {
+                        "workerIndex": -1,
+                        "status": "skipped",
+                        "duration": 0,
+                        "errors": [],
+                        "stdout": [],
+                        "stderr": [],
+                        "retry": 0,
+                        "startTime": "2024-11-07T09:50:48.393Z",
+                        "attachments": []
+                      }
+                    ],
+                    "status": "skipped"
+                  }
+                ],
+                "id": "3af80954a04151b9d723-20ab6f050d3e9d5b2a16",
+                "file": "slaConfig.test.ts",
+                "line": 9,
+                "column": 8
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "errors": [],
+    "stats": {
+      "startTime": "2024-11-07T09:50:48.323Z",
+      "duration": 70.40099999999998,
+      "expected": 0,
+      "skipped": 12,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  }
