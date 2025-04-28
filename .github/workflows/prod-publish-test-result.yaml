@@ -1,4 +1,4 @@
-name: Build and Publish Artifact
+name: Publish Test Result
  
 on:
   workflow_dispatch:
