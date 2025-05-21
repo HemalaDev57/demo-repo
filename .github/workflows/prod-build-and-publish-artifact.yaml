@@ -96,7 +96,7 @@ jobs:
           cloudbees-url: "https://api.cloudbees.io"
           cloudbees-pat: ${{ secrets.CBP_PROD_PAT }}
       - name: Register Build Artifact - OIDC
-        uses: cloudbees-io-gha/register-build-artifact@CBP-14459
+        uses: cloudbees-io-gha/register-build-artifact@v3
         with:
           name: "demo-oidc-service"
           version: "${{ steps.versioning.outputs.version }}"
