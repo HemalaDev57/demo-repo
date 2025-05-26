@@ -12,6 +12,6 @@ jobs:
         uses: cloudbees-io/label-artifact-version@main
         with:
           component-id: "daf6328c-a799-4d3a-92c7-c32c1c6e07eb"
-          artifact-id: "dc4bf3d9-76dc-4873-8cac-085302882380"
+          artifact-id: "ee5b22f9-18ac-456c-a754-fede35272ec0"
           labels: "ready"
           operation: "ADD"
