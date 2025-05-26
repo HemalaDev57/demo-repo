@@ -1,0 +1,17 @@
+apiVersion: automation.cloudbees.io/v1alpha1
+kind: workflow
+name: My workflow
+on:
+  push:
+    branches:
+      - "master"
+jobs:
+  build:
+    steps:
+      - name: Add labels
+        uses: cloudbees-io/label-artifact-version@main
+        with:
+          component-id: "daf6328c-a799-4d3a-92c7-c32c1c6e07eb"
+          artifact-id: "dc4bf3d9-76dc-4873-8cac-085302882380"
+          labels: "ready"
+          operation: "ADD"
