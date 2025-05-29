@@ -1,0 +1,19 @@
+name: PROD - Test OIDC
+ 
+on:
+  workflow_dispatch:
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+    steps:
+      - name: Register Build Artifact - OIDC
+        uses: cloudbees-io-gha/register-build-artifact@v3
+        with:
+          name: "test-oidc-service"
+          version: "1.0.1"
+          url: "docker.io/oidc/hddocker125/test-oidc-service:1.0.1"
+          digest: "sha256:b2afe1733cb11811a1889b486ce04f7b0158dcbc654412ced1dd5f622b7d3f6c"
+          type: "docker"
