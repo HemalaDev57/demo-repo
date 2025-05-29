@@ -1,4 +1,4 @@
-name: Build and Publish Artifact
+name: PROD - Build and Publish Artifact
  
 on:
   workflow_dispatch:
