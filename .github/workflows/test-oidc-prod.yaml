@@ -8,6 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       id-token: write
+      contents: read
     steps:
       - name: Register Build Artifact - OIDC
         uses: cloudbees-io-gha/register-build-artifact@v3
@@ -17,8 +18,9 @@ jobs:
           url: "docker.io/oidc/hddocker125/test-oidc-service:1.0.1"
           digest: "sha256:b2afe1733cb11811a1889b486ce04f7b0158dcbc654412ced1dd5f622b7d3f6c"
           type: "docker"
-      - name: My evidence
-        uses: cloudbees-io-gha/publish-evidence-item@v2
-        id: go-action
-        with :
-          content: "#Evidence Content\nEvidence display content"
+          label: "test"
+      # - name: My evidence
+      #   uses: cloudbees-io-gha/publish-evidence-item@v2
+      #   id: go-action
+      #   with :
+      #     content: "#Evidence Content\nEvidence display content"
