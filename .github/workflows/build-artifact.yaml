@@ -1,0 +1,30 @@
+name: PROD - Build and Publish Artifact
+ 
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write 
+  packages: write
+  
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Register Build Artifact
+        uses: cloudbees-io-gha/register-build-artifact@v2
+        with:
+          name: "demo-test-service"
+          version: "1.0.0"
+          url: "docker.io/hdevanan/demo-service-1:1.0.0"
+          digest: "${{ steps.image-digest.outputs.digest }}"
+          type: "docker"
+          cloudbees-url: "https://api.cloudbees.io"
+          cloudbees-pat: ${{ secrets.CBP_PROD_PAT }}
+      
